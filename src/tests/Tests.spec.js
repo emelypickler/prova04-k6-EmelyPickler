@@ -14,10 +14,15 @@ export const options = {
     http_req_failed: ['rate<0.25'],
     rate_status_ok: ['rate>0.75']
   },
+
   stages: [
     { duration: '30s', target: 7 },
-    { duration: '2m', target: 92 },
-    { duration: '1m', target: 92 }
+    { duration: '30s', target: 20 },
+    { duration: '30s', target: 35 },
+    { duration: '30s', target: 50 },
+    { duration: '30s', target: 65 },
+    { duration: '30s', target: 80 },
+    { duration: '30s', target: 92 }
   ]
 };
 
